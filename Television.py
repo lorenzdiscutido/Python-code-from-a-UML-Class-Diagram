@@ -25,7 +25,7 @@ class TV:
             return self.Volume
         
         #Set the volume(1-7 only)
-        def setVolume():
+        def setVolume(volume):
             if volume>=1 and volume<=7:
                 self.volume=volume
 #Create the first object

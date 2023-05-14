@@ -23,6 +23,11 @@ class TV:
         #Getting the volume 
         def getVolume():
             return self.Volume
+        
+        #Set the volume(1-7 only)
+        def setVolume():
+            if volume>=1 and volume<=7:
+                self.volume=volume
 #Create the first object
 #Create the second object
 #Output the two object

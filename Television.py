@@ -19,6 +19,10 @@ class TV:
         def setChannel(channel):
             if channel>=1 and channel<=120:
                 self.channel=channel
+        
+        #Getting the volume 
+        def getVolume():
+            return self.Volume
 #Create the first object
 #Create the second object
 #Output the two object

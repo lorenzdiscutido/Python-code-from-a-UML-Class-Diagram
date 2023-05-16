@@ -35,6 +35,13 @@ class TV:
                 self.channel += 1
             else:
                 self.channel = 1
+        
+        #if the user wants to change the channel down
+        def channelDown():
+            if self.channel>1:
+                self.channel -= 1
+            else:
+                self.channel = 1 
 #Create the first object
 #Create the second object
 #Output the two object

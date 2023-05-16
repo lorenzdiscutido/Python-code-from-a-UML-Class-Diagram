@@ -28,6 +28,13 @@ class TV:
         def setVolume(volume):
             if volume>=1 and volume<=7:
                 self.volume=volume
+        
+        #If the user wants to change the channel up
+        def channelUp():
+            if self.channel<120:
+                self.channel += 1
+            else:
+                self.channel = 1
 #Create the first object
 #Create the second object
 #Output the two object

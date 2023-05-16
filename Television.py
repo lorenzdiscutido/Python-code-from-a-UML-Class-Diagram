@@ -48,6 +48,12 @@ class TV:
                 self.volume+=1
             else:
                 self.volume=1
+        
+        #if the user want to turn the volume down
+            if self.volume>1:
+                self.volume-=1
+            else:
+                self.volume=7
 #Create the first object
 #Create the second object
 #Output the two object

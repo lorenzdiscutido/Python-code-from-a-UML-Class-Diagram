@@ -41,7 +41,13 @@ class TV:
             if self.channel>1:
                 self.channel -= 1
             else:
-                self.channel = 1 
+                self.channel = 1
+
+        # If the user want to up the volume
+            if self.volume<=7:
+                self.volume+=1
+            else:
+                self.volume=1
 #Create the first object
 #Create the second object
 #Output the two object

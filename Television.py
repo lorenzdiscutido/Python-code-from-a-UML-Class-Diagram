@@ -54,6 +54,11 @@ class TV:
                 self.volume-=1
             else:
                 self.volume=7
-#Create the first object
-#Create the second object
-#Output the two object
+
+#Output what the class TV does
+TV1=TV()
+TV2=TV()
+TV1.setChannel(30)
+TV1.setVolume(3)
+TV2.setChannel(3)
+TV2.setVolume(2)

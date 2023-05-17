@@ -6,21 +6,22 @@ class TV:
         #Set the volume and channel to 1
         self.channel=1
         self.volume=1
-        
+        self.turnOn=False
+
         #Initiate the tv on and off of the tv
         def turnOn(self):
             self.turnOn=True
         def turnOff(self):
-            self.turnOff=False
+            self.turnOn=False
 
         #get the channel of the TV
         def getChannel(self):
             return self.channel
         
         #setting a new channel of the TV
-        def setChannel(self, channel):
-            if channel>=1 and channel<=120:
-                self.channel=channel
+        def setChannel(self, Channel):
+            if Channel>=1 and Channel<=120:
+                self.channel=Channel
         
         #Getting the volume 
         def getVolume(self):
@@ -29,7 +30,7 @@ class TV:
         #Set the volume(1-7 only)
         def setVolume(self, volume):
             if volume>=1 and volume<=7:
-                self.volume=volume
+                self.Volume=volume
         
         #If the user wants to change the channel up
         def channelUp(self):
@@ -60,9 +61,12 @@ class TV:
                 self.volume=7
 
 #Output what the class TV does
-TV1=TV()
-TV2=TV()
-TV1.setChannel(30) 
-TV1.setVolume(3)
-TV2.setChannel(3)
-TV2.setVolume(2)
+if __name__=="__init__":
+    TV1=TV()
+    TV2=TV()
+    TV1.getChannel(30) 
+    TV1.setVolume(3)
+    TV2.setChannel(3)
+    TV2.setVolume(2)
+    print("TV1's channel is:", TV1.getChannel(), "and the volume is:", TV1.setVolume())
+    print("TV2's channel is:", TV2.getChannel(), "and the volume is:", TV2.setVolume())

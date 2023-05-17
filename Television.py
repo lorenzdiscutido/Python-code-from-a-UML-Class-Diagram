@@ -1,15 +1,17 @@
 #make a class and name it TV
 class TV:
 #Make a constructor with the television's functions
-    def __init__(self, turnOn, turnOff, getChannel, setChannel, getVolume, setVolume, channelUp, channelDown, volumeUp, VolumeDown):
-
-        #Initiate the tv on and off of the tv
-        self.turnOn=True
-        self.turnOff=False
-
+    def __init__(self):
+        
         #Set the volume and channel to 1
         self.channel=1
         self.volume=1
+        
+        #Initiate the tv on and off of the tv
+        def turnOn(self):
+            self.turnOn=True
+        def turnOff(self):
+            self.turnOff=False
 
         #get the channel of the TV
         def getChannel(self):
@@ -60,7 +62,7 @@ class TV:
 #Output what the class TV does
 TV1=TV()
 TV2=TV()
-TV1.setChannel(30)
+TV1.setChannel(30) 
 TV1.setVolume(3)
 TV2.setChannel(3)
 TV2.setVolume(2)

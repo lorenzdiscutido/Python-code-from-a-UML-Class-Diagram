@@ -44,12 +44,14 @@ class TV:
                 self.channel = 1
 
         # If the user want to up the volume
+        def volumeUp():
             if self.volume<=7:
                 self.volume+=1
             else:
                 self.volume=1
         
         #if the user want to turn the volume down
+        def volumeDown():
             if self.volume>1:
                 self.volume-=1
             else:

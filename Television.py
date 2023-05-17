@@ -60,15 +60,14 @@ class TV:
             else:
                 self.volume=7
 
-#Output what the class TV does
-if __name__=="__init__":
-    TV1=TV()
-    TV2=TV()
-    TV1.turn_on()
-    TV2.turn_on()
-    TV1.get_channel(30) 
-    TV1.set_volume(3)
-    TV2.set_channel(3)
-    TV2.set_volume(2)
-    print("TV1's channel is:", TV1.getChannel(), "and the volume is:", TV1.setVolume())
-    print("TV2's channel is:", TV2.getChannel(), "and the volume is:", TV2.setVolume())
+        #Output what the class TV does
+        TV1=TV()
+        TV2=TV()
+        TV1.turn_on()
+        TV2.turn_on()
+        TV1.get_channel(30) 
+        TV1.set_volume(3)
+        TV2.set_channel(3)
+        TV2.set_volume(2)
+        print("TV1's channel is:", TV1.getChannel(), "and the volume is:", TV1.setVolume())
+        print("TV2's channel is:", TV2.getChannel(), "and the volume is:", TV2.setVolume())

@@ -6,11 +6,12 @@ class TV:
         #Set the volume and channel to 1
         self.channel=1
         self.volume=1
-        self.turn_on=False
+        self.turn_on=True
 
         #Initiate the tv on and off of the tv
         def turn_on(self):
             self.turn_on=True
+
         def turn_off(self):
             self.turn_on=False
 
@@ -61,13 +62,7 @@ class TV:
                 self.volume=7
 
         #Output what the class TV does
-        TV1=TV()
-        TV2=TV()
-        TV1.turn_on()
-        TV2.turn_on()
-        TV1.get_channel(30) 
-        TV1.set_volume(3)
-        TV2.set_channel(3)
-        TV2.set_volume(2)
-        print("TV1's channel is:", TV1.getChannel(), "and the volume is:", TV1.setVolume())
-        print("TV2's channel is:", TV2.getChannel(), "and the volume is:", TV2.setVolume())
+        def volume_channel(self):
+            if self.turn_on:
+                print("The TV's channel is:", self.channel)
+                print("The TV's volume is:", self.volume)

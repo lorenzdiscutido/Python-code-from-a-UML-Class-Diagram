@@ -21,5 +21,5 @@ class TestTV:
         TV2.set_volume(2)
 
         #Print the result
-        self.TV1.volume_channel()
-        self.TV2.volume_channel()
+        print(self.TV1.volume_channel())
+        print(self.TV2.volume_channel())

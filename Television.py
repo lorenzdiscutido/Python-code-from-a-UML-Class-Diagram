@@ -6,7 +6,7 @@ class TV:
         #Set the volume and channel to 1
         self.channel=1
         self.volume=1
-        self.turn_on=on
+        self.is_on=on
 
     #Initiate the tv on and off of the tv
     def turn_on(self):
@@ -61,7 +61,7 @@ class TV:
             if self.volume>1:
                 self.volume-=1
 
-    #Output what the class TV does
+        #Output what the class TV does
     def volume_channel(self):
         if self.turn_on:
             status = "on"

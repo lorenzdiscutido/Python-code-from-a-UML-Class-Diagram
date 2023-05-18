@@ -1,12 +1,12 @@
 #make a class and name it TV
 class TV:
 #Make a constructor with the television's functions
-    def __init__(self):
+    def __init__(self, on=False):
         
         #Set the volume and channel to 1
         self.channel=1
         self.volume=1
-        self.turn_on=False
+        self.turn_on=on
 
     #Initiate the tv on and off of the tv
     def turn_on(self):
@@ -23,7 +23,7 @@ class TV:
     #setting a new channel of the TV
     def set_channel(self, Channel):
         if self.turn_on:
-            if Channel>=1 and Channel<=120:
+            if 1<=Channel<=120:
                 self.channel=Channel
         
     #Getting the volume 
@@ -34,7 +34,7 @@ class TV:
     #Set the volume(1-7 only)
     def set_volume(self, Volume):
         if self.turn_on:
-            if Volume>=1 and Volume<=7:
+            if 1<=Volume<=7:
                 self.volume=Volume
         
     #If the user wants to change the channel up
@@ -46,18 +46,19 @@ class TV:
     #if the user wants to change the channel down
     def channel_down(self):
         if self.turn_on:
-            if self.channel>120:
+            if self.channel>1:
                 self.channel -= 1
 
     # If the user want to up the volume
     def volume_up(self):
-        if self.volume<=7:
-            self.volume+=1
+        if self.turn_on:
+            if self.volume<7:
+                self.volume+=1
         
     #if the user want to turn the volume down
     def volume_down(self):
         if self.turn_on:
-            if self.volume>7:
+            if self.volume>1:
                 self.volume-=1
 
     #Output what the class TV does
@@ -66,7 +67,7 @@ class TV:
             status = "on"
         else:
             status = "off"
-        print(status)
+        print("TV status is:", status)
 
         if self.turn_on:
             print("The TV's channel is:", self.channel)

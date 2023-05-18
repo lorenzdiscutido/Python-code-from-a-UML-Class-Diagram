@@ -5,8 +5,8 @@ from Television import TV
 class TestTV:
     def __init__(self):
         #Initialize the two objects
-        self.TV1=TV()
-        self.TV2=TV()
+        self.TV1 = TV()
+        self.TV2 = TV()
 
         #Turn on both the TVs
         self.TV1.turn_on()
@@ -20,8 +20,9 @@ class TestTV:
         self.TV2.set_channel(3)
         self.TV2.set_volume(2)
 
-        #Print the result
+        #Print the results
         self.TV1.volume_channel()
         self.TV2.volume_channel()
 
+#Create an instance of the test driver then run the code
 TestTV()

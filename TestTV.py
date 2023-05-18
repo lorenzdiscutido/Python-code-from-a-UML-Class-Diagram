@@ -21,7 +21,9 @@ class TestTV:
         TV2.set_volume(2)
 
         #Print the results
+        print("\n TV1:")
         TV1.volume_channel()
+        print("\n TV2:")
         TV2.volume_channel()
 
 #Create an instance of the test driver then run the code

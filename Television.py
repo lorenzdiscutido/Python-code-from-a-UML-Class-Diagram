@@ -67,6 +67,7 @@ class TV:
             status = "on"
         else:
             status = "off"
+        print("")
         print("TV status is:", status)
 
         if self.turn_on:

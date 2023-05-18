@@ -26,43 +26,44 @@ class TV:
         
         #Getting the volume 
         def get_volume(self):
-            return self.Volume
+            return self.volume
         
         #Set the volume(1-7 only)
-        def set_volume(self, volume):
-            if volume>=1 and volume<=7:
-                self.Volume=volume
+        def set_volume(self, Volume):
+            if Volume>=1 and Volume<=7:
+                self.volume=Volume
         
         #If the user wants to change the channel up
         def channel_up(self):
             if self.channel<120:
                 self.channel += 1
-            else:
-                self.channel = 1
         
         #if the user wants to change the channel down
         def channel_down(self):
-            if self.channel>1:
+            if self.channel>120:
                 self.channel -= 1
-            else:
-                self.channel = 1
 
         # If the user want to up the volume
         def volume_up(self):
             if self.volume<=7:
                 self.volume+=1
-            else:
-                self.volume=1
         
         #if the user want to turn the volume down
         def volume_down(self):
-            if self.volume>1:
+            if self.volume>7:
                 self.volume-=1
-            else:
-                self.volume=7
 
         #Output what the class TV does
         def volume_channel(self):
             if self.turn_on:
+                status = "on"
+            else:
+                status = "off"
+            print(status)
+
+            if self.turn_on:
                 print("The TV's channel is:", self.channel)
                 print("The TV's volume is:", self.volume)
+
+#create an instance of the TV class
+TV()
